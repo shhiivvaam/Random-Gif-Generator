@@ -29,6 +29,7 @@ const Tag = () => {
             {/* Image Generation Text Input */}
 
             <input
+                placeholder='tell Me!!'
                 className='w-10/12 text-lg py-2 rounded-lg mb-[3px] text-center'
                 onChange={(event) => setTag(event.target.value)}
                 value={tag}

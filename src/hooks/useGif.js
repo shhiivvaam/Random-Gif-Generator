@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
+import {toast} from 'react-hot-toast'
 
 // Todo: Url ki api API_KEY variable k throught pass krna hai, direct nhi
 // const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
@@ -22,6 +23,7 @@ const useGif = (tag) => {
 
         setGif(imageSource);
         setLoading(false);
+        toast.success('Loading Gif, please wait!! 🫣🫣')
         // console.log(imageSource);
         // console.log(data);
     }
